@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./img/user.png" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link
       rel="stylesheet"
@@ -28,11 +28,17 @@
       }
 
       .slick-next {
-        right: -2rem;
       }
       .slick-next:before {
         font-size: 2rem;
         color: #333;
+      }
+
+      @media (max-width: 768px) {
+        .slick-prev:before,
+        .slick-next:before {
+          display: none;
+        }
       }
     </style>
   </head>
@@ -99,7 +105,7 @@
       <div class="container sm:w-3/4 lg:w-3/4 mx-auto px-2">
         <h2 class="w-48 pb-3 mx-auto text-center text-4xl text-slate-800 border-b-4 border-b-green-600 font-semibold">My Skills</h2>
         <div class="my-10 p-0 lg:my-5 lg:p-10 flex justify-center flex-wrap items-center gap-8">
-          <img class="w-14 lg:w-20" src="./img/html.png" alt="" />
+          <img class="w-14 lg:w-20" src="./img/html-logo.png" alt="" />
           <img class="w-14 lg:w-20" src="./img/css.png" alt="" />
           <img class="w-14 lg:w-20" src="./img/tailwind.PNG" alt="" />
           <img class="w-14 lg:w-20" src="./img/javascript.png" alt="" />
