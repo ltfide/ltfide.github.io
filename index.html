@@ -40,7 +40,10 @@
         .slick-next:before {
           display: none;
         } */
-            #dinkes button .slick-next:before {
+            #dinkes .slick-arrow {
+               display: none !important;
+            }
+            #developpy .slick-arrow {
                display: none !important;
             }
          }
@@ -64,7 +67,7 @@
       </header>
       <section class="relative">
          <div class="container flex flex-col-reverse lg:flex-row items-center gap-12 mt-14 lg:mt-25">
-            <nav class="inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
+            <nav class="sm:inline-block lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
                <div class="absolute left-[-20px] top-[-5rem] transform -translate-x-1/2 space-y-6">
                   <a href="#" class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
                      <span class="bg-green-600 text-green-100 px-2 py-1 rounded-md ml-10 opacity-0">Home</span>
@@ -97,9 +100,10 @@
                </div>
             </div>
             <!-- image -->
-            <div class="flex justify-center flex-1 mb-10 md:mb-16 lg:mb-0 z-10 relative">
-               <img class="w-3/5 h-3/4 lg:w-3/4 mt-3 lg:h-3/4 z-10" src="./img/programmer.png" alt="" />
-               <div class="w-full h-full bg-green-600 absolute rounded-full"></div>
+            <div class="flex justify-center flex-1 mb-7 md:mb-16 lg:mb-0 z-10 relative">
+               <div class="w-72 h-72 overflow-hidden bg-green-600 shadow-lg rounded-full">
+                  <img class="w-full h-full z-10" src="./img/me.png" alt="Lutfi" />
+               </div>
             </div>
          </div>
       </section>
